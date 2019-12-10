@@ -1,0 +1,458 @@
+/* =============================================================================
+
+[Table of contents]
+
+1. Typography
+2. Links
+3. Layout
+4. Header
+5. Main
+6. Footer
+7. Tablet (Portrait)
+8. Mobile (Landscape)
+9. Mobile (Portrait)
+10. For Retina Displays
+11. Additional Print styles
+
+==============================================================================*/
+
+
+
+/* 1. Typography
+==============================================================================*/
+body {
+  font: 100%/1.4 Georgia, "Times New Roman", Times, serif;
+  text-shadow: 1px 2px 0px #000000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 0.5em;
+  color: #FF5C17;
+}
+
+h1 {
+  font-size: 2.875em;
+}
+
+h2 {
+  font-size: 1.375em;
+}
+
+h3 {
+  font-size: 1.25em;
+}
+
+h4 {
+  font-size: 1.125em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 0.875em;
+}
+
+.small {
+  font-size: 0.875em;
+}
+
+.big {
+  font-size: 1.125em;
+}
+
+/* 2. Links
+==============================================================================*/
+a {
+  color: #8F7D72;
+  text-decoration: none;
+  -webkit-transition: color 0.2s linear, background 0.2s linear;
+  -moz-transition: color 0.2s linear, background 0.2s linear;
+  -ms-transition: color 0.2s linear, background 0.2s linear;
+  -o-transition: color 0.2s linear, background 0.2s linear;
+  transition: color 0.2s linear, background 0.2s linear;
+}
+
+a:hover {
+  color: #FF5C17;
+  text-decoration: none;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:hover, a:active {
+  outline: 0;
+}
+
+::-moz-selection {
+  background: #5D514B;
+  color: #FFFFFF;
+  text-shadow: none;
+}
+
+::selection {
+  background: #5D514B;
+  color: #FFFFFF;
+  text-shadow: none;
+}
+
+
+/* 3. Layout
+==============================================================================*/
+body {
+  background: url("../img/bg-pattern.png") repeat scroll 0 0 #3E3530;
+  color: #CBB9AE;
+}
+
+#wrapper {
+  height: 100%;
+}
+
+#page {
+  width: 960px;
+  height: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+
+
+/* 4. Header
+==============================================================================*/
+#header {
+  background: url("../img/top-lines.png") no-repeat scroll 50% 55% transparent;
+  text-align: center;
+  padding: 30px 0 0 0;
+  margin: 0 0 40px 0;
+}
+
+#header h1 {
+  margin: 0;
+}
+
+
+/* 5. Main
+==============================================================================*/
+#main article {
+  text-align: justify;
+}
+
+#main article .title {
+  line-height: 120%;
+  color: #FFFFFF;
+  display: inline-block;
+}
+
+#main article a.social-icon {
+  background: url('../img/bg-icon.png') no-repeat 0 -24px #5D514B;
+  display: block;
+  float: left;
+  width: 24px;
+  height: 24px;
+  margin: 0 5px 5px 0;
+
+  -moz-box-shadow: 1px 1px 0px 0px #000000;
+  -webkit-box-shadow: 1px 1px 0px 0px #000000;
+  box-shadow: 1px 1px 0px 0px #000000;
+
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+#main article a.social-icon:hover {
+  /*background: #FF5C00; */
+  background: url('../img/bg-icon.png') no-repeat 0 0 #FF5C00;
+}
+
+.star-holder {
+  background: url('../img/stars.png') repeat-x bottom left;
+  background-size: 20px 32px;
+  position: relative;
+  width: 98px;
+  height: 16px;
+  margin: 2px 0 0 0;
+}
+
+.star-holder .star-rating {
+  background: url('../img/stars.png') repeat-x top left;
+  background-size: 20px 32px;
+  height: 16px;
+  text-indent: -9999px;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+}
+
+.star-rating.one {
+  width: 20px;
+}
+
+.star-rating.two {
+  width: 40px;
+}
+
+.star-rating.three {
+  width: 60px;
+}
+
+.star-rating.four {
+  width: 80px;
+}
+
+.star-rating.five {
+  width: 98px;
+}
+
+#portfolio {
+  margin: 0 0 0 -14px;
+}
+
+#portfolio .item {
+  /*background: url("../img/ico-photo.png") no-repeat center center #E6DFDB;*/
+  background: #E6DFDB;
+  display: block;
+  float: left;
+  border: 10px solid #FFFFFF;
+  margin: 0 0 14px 14px;
+  width: 70px;
+  height: 70px;
+  position: relative;
+}
+
+#portfolio .item img {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+#portfolio .item:hover img {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+#portfolio .item.last {
+  margin: 0 0 14px 0;
+}
+
+#portfolio .mask {
+  background: url("../img/ico-magnifier.png") no-repeat center center #FF5C17;
+  opacity: 0;
+  display: block;
+  position: absolute;
+  width: 84px;
+  height: 84px;
+  top: -7px;
+  left: -7px;
+  z-index: 10;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+#portfolio .item:hover .mask {
+  opacity: 0.8;
+}
+
+.orange {
+  color: #FF5C17;
+}
+
+
+/* 6. Footer
+==============================================================================*/
+#footer {
+  background: url("../img/lines.png") repeat-x scroll 0 0 transparent;
+  text-align: center;
+  line-height: 80px;
+}
+
+
+/* 7. Tablet (Portrait)
+==============================================================================*/
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  /* Debugging CSS Media Queries */
+  /* body::before {
+    content: "Tablet (Portrait): 768 < 959";
+    display: block;
+    text-align: center;
+    background: #FF4876;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  } */
+
+  #page {
+    width: 730px;
+    font-size: 89%;
+    line-height: 120%;
+  }
+  .row, p {
+    margin-bottom: 1em;
+  }
+  .big {
+    font-size: 1em;
+  }
+  .star-holder,
+  .star-holder .star-rating {
+    background-size: 16px 26px;
+  }
+  .star-holder {
+    width: 80px;
+    height: 13px;
+  }
+  .star-holder .star-rating {
+    height: 13px;
+  }
+  .star-rating.one {
+    width: 16px;
+  }
+  .star-rating.two {
+    width: 32px;
+  }
+  .star-rating.three {
+    width: 48px;
+  }
+  .star-rating.four {
+    width: 64px;
+  }
+  .star-rating.five {
+    width: 80px;
+  }
+  #portfolio .item {
+    width: 50px;
+    height: 50px;
+    border-width: 8px;
+  }
+  #portfolio .mask {
+    width: 62px;
+    height: 62px;
+    left: -6px;
+    top: -6px;
+  }
+  .bx-wrapper {
+    padding: 0 8px 25px !important;
+  }
+  .bx-wrapper .bx-viewport {
+    border-width: 8px !important;
+  }
+  #footer {
+    line-height: 58px;
+  }
+}
+
+
+/* 8. Mobile (Landscape)
+==============================================================================*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  /* Debugging CSS Media Queries */
+  /* body::before {
+    content: "Mobile (Landscape): 480 < 767";
+    display: block;
+    text-align: center;
+    background: #FF4876;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  } */
+
+  #page {
+    width: 420px;
+  }
+  #portfolio .item {
+    margin: 0 0 18px 18px;
+  }
+}
+
+
+/* 9. Mobile (Portrait)
+==============================================================================*/
+@media only screen and (max-width: 479px) {
+  /* Debugging CSS Media Queries */
+  /* body::before {
+    content: "Mobile (Portrait): 0 < 479";
+    display: block;
+    text-align: center;
+    background: #FF4876;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  } */
+
+  #page {
+    width: 300px;
+  }
+  #header {
+    background: url("../img/lines.png") repeat-x scroll 0 bottom transparent;
+    padding: 30px 0 40px;
+  }
+}
+
+
+/* 10. For Retina Displays
+==============================================================================*/
+@media (-webkit-min-device-pixel-ratio: 1.5),
+       (min--moz-device-pixel-ratio: 1.5),
+       (-o-min-device-pixel-ratio: 3/2),
+       (min-resolution: 1.5dppx) {
+        #header {
+          background-image: url("../img/top-lines@2x.png");
+          background-size: 960px 13px;
+        }
+        .bx-wrapper {
+          background-image: url("../img/bg-photo-bottom@2x.png") !important;
+          background-size: 101px 25px;
+        }
+        .star-holder,
+        .star-holder .star-rating {
+          background-image: url('../img/stars@2x.png');
+          margin: 0;
+        }
+        #footer {
+          background-image: url("../img/lines@2x.png");
+          background-size: 5px 13px;
+        }
+}
+
+
+/* 11. Additional Print styles
+==============================================================================*/
+@media print {
+  .bx-wrapper .bx-viewport {
+    border: 10px solid #CECECE !important;
+  }
+  #portfolio a[href]:after {
+    content: " ";
+  }
+  #portfolio .item {
+    border: 10px solid #CECECE;
+  }
+  .star-holder {
+    text-align: right;
+  }
+  .star-holder .star-rating {
+    text-indent: 0;
+    display: inline;
+    text-align: right;
+    overflow: visible;
+  }
+}
